@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+Disallow: /signal-admin/
+
+Sitemap: https://corybuilt.com/sitemap.xml
+Sitemap: https://corybuilt.com/news-sitemap.xml

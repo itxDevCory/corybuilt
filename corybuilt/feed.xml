@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<channel>
+<title>The Corybuilt Signal</title>
+<link>https://corybuilt.com/#signal</link>
+<atom:link href="https://corybuilt.com/feed.xml" rel="self" type="application/rss+xml"/>
+<description>AI, computing and the regulations being written around them — decoded for self-taught builders. The paycheck angle on every breakthrough. Free, 18+, worldwide.</description>
+<language>en-us</language>
+<item>
+<title>The Signal is live: AI news that hits your paycheck</title>
+<link>https://corybuilt.com/#signal</link>
+<guid isPermaLink="false">corybuilt-signal-001</guid>
+<pubDate>Sun, 23 Aug 2026 12:00:00 GMT</pubDate>
+<description>Why we built a free wire for self-taught builders: daily breakthroughs, incoming regulations, and the money angles nobody translates. Join free at corybuilt.com.</description>
+</item>
+<item>
+<title>Read this before AI rewrites your job description</title>
+<link>https://corybuilt.com/#signal</link>
+<guid isPermaLink="false">corybuilt-signal-002</guid>
+<pubDate>Sun, 23 Aug 2026 12:05:00 GMT</pubDate>
+<description>The skills that compound, the roles that shift, and the openings that appear every time the technology jumps. Plain English, no degree required.</description>
+</item>
+</channel>
+</rss>

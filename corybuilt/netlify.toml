@@ -1,0 +1,29 @@
+[build]
+  publish = "."
+  functions = "netlify/functions"
+
+[functions]
+  node_bundler = "esbuild"
+
+[[redirects]]
+  from = "/feed.xml"
+  to = "/.netlify/functions/signal-rss"
+  status = 200
+  force = true
+
+[[redirects]]
+  from = "/sitemap.xml"
+  to = "/.netlify/functions/signal-sitemap"
+  status = 200
+  force = true
+
+[[redirects]]
+  from = "/news-sitemap.xml"
+  to = "/.netlify/functions/signal-sitemap"
+  status = 200
+  force = true
+
+[[headers]]
+  for = "/assets/*"
+  [headers.values]
+    Cache-Control = "public, max-age=86400"
