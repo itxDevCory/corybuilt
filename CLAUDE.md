@@ -80,6 +80,33 @@ republish the last good CLI deploy, unlink that repo. Rules:
    repo (it is) and that the deploy came from git, or run `npm install` before
    a CLI deploy.
 
+## Working agreement with Cory (2026-09-08) — Claude ships, Cory doesn't touch files
+
+Cory does not want to edit files on the Mac, apply zips or diffs by hand,
+or change anything in Netlify for routine work. Claude does the whole loop.
+This applies to this site and to any other project (the app included) that
+Cory brings into a session.
+
+- **Claude commits and pushes.** Clone this repo, make the change, commit with
+  a clear message, `git push origin master`. Netlify auto-publishes. Do not
+  hand Cory a zip or a patch to apply himself — that is the old workflow.
+- **UI and content changes: just do them.** Anything in `index.html`, the
+  Signal page chrome (`lib/page.mjs`, `lib/cover.mjs`), copy, styling,
+  layout, images, meta tags — make the change and push without asking for
+  confirmation. Then tell Cory what changed and give the live URL to check.
+- **Still ask first** before: DNS, Netlify build settings or repo links,
+  environment variables, the cron schedule, deleting articles or blob data,
+  or anything under "DNS and HTTPS" above. Those are one-way doors.
+- **Auth.** Cory provides a fine-grained GitHub PAT (repo: `corybuilt` only,
+  permission: Contents read/write, short expiry) at the start of a session.
+  It lives only in the sandbox git credential store — never in this repo,
+  never in a commit, never in these notes, never in memory. The sandbox is
+  wiped between sessions, so if there is no token, ask Cory for a fresh one
+  instead of falling back to zips.
+- **Verify after every push.** Check the Netlify deploy went green (deploys
+  page or the Netlify integration), then spot-check the live site per
+  "How to ship a change" above before saying it is done.
+
 ## Signal admin (needs SIGNAL_TOKEN from Netlify env; never commit it)
 
 - Run now: `https://corybuilt.com/signal-admin/run?token=…` (`&beat=tools&count=2`)
